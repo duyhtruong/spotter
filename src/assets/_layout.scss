@@ -1,3 +1,13 @@
-.dashboard__body--color{
-    background-color: green;
+.dashboard {
+    overflow: auto;
+    position: relative;
+
+    &__body--color{
+        background-color: $off-white;
+    }
+}
+
+.card__group--position{
+    position: relative;
+    top: -80px;    
 }

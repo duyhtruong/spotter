@@ -4,7 +4,7 @@ class Nav extends React.Component{
     render(){
         return(
             <nav>
-                Nav
+                <p className='nav__title--font'>Dashboard</p>
             </nav>
         )
     }
