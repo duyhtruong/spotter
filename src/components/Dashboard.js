@@ -2,6 +2,7 @@ import React from 'react';
 
 import Nav from './Nav';
 import Card from './Card';
+import LineGraph from './LineGraph';
 
 
 class Dashboard extends React.Component{
@@ -9,7 +10,9 @@ class Dashboard extends React.Component{
         return(
             <div className='dashboard dashboard__body--color'>
                 <Nav />
-                <Card/>
+                <Card>
+                    <LineGraph />
+                </Card>
                 <Card />
                 <Card />
             </div>
