@@ -4,17 +4,21 @@ import Nav from './Nav';
 import Card from './Card';
 import LineGraph from './LineGraph';
 
+import UserInfo from './UserInfo';
+
 
 class Dashboard extends React.Component{
     render(){
         return(
             <div className='dashboard dashboard__body--color'>
                 <Nav />
-                <Card>
+                <Card styleName='card__intro--size'>
+                    <UserInfo />
+                </Card>
+                <Card styleName='card__body--size'>
                     <LineGraph />
                 </Card>
-                <Card />
-                <Card />
+                <Card styleName='card__body--size' />
             </div>
         )
     }
