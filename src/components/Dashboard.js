@@ -3,6 +3,7 @@ import React from 'react';
 import Nav from './Nav';
 import Card from './Card';
 import LineGraph from './LineGraph';
+import RadialGraph from './RadialGraph';
 
 import UserInfo from './UserInfo';
 
@@ -18,7 +19,9 @@ class Dashboard extends React.Component{
                 <Card styleName='card__body--size'>
                     <LineGraph />
                 </Card>
-                <Card styleName='card__body--size' />
+                <Card styleName='card__body--size'>
+                    <RadialGraph />
+                </Card>
             </div>
         )
     }
