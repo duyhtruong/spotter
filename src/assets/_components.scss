@@ -7,7 +7,7 @@ nav {
     font-family: $Roboto;
     font-weight: 700;
     font-size: 2em;
-    color: white;
+    color: $off-white;
 }
 
 .card {
@@ -23,7 +23,7 @@ nav {
     }
 
     &__body--size{
-        max-width: 95vw;
+        width: 95vw;
         height: 50vh;       
     }
 } 
@@ -49,5 +49,12 @@ nav {
 }
 
 .plot{
-   padding-top: 2em;
+    font-family: $Roboto;
+    font-weight: 500;
+
+    &--align{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
 }

@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Card from './Card';
 import LineGraph from './LineGraph';
 import RadialGraph from './RadialGraph';
-
+import BarGraph from './BarGraph';
 import UserInfo from './UserInfo';
 
 
@@ -22,6 +22,10 @@ class Dashboard extends React.Component{
                 <Card styleName='card__body--size'>
                     <RadialGraph />
                 </Card>
+                <Card styleName='card__body--size'>
+                    <BarGraph />
+                </Card>
+                <Card styleName='card__body--size' />
             </div>
         )
     }

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../node_modules/react-vis/dist/style.css';
-import {FlexibleXYPlot, LineSeries, XAxis, 
-        YAxis} from 'react-vis';
+import {FlexibleXYPlot, LineSeries, XAxis, YAxis} from 'react-vis';
 
 class LineGraph extends React.Component{
     render(){
@@ -51,7 +50,7 @@ class LineGraph extends React.Component{
           ];
           
         return(
-            <div className='plot'>
+            <div className='plot plot--align'>
             <FlexibleXYPlot height={300} xType='ordinal'>
             <XAxis tickLabelAngle={-45} />
             <YAxis />
@@ -59,7 +58,7 @@ class LineGraph extends React.Component{
             <LineSeries data={data2} />
             <LineSeries data={data3} />
             </FlexibleXYPlot>
-          </div>
+            </div>
         )
     }
 }
