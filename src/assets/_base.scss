@@ -22,3 +22,14 @@ $Roboto: 'Roboto' , sans-serif;
 //Color Variables
 $off-white: #ecf0f1; 
 $off-black: #1d1d1d;
+
+//Media Query Variables
+$screen-lg-min: 992px;
+
+//Media Query Mixins
+
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}){
+        @content;
+    }
+}

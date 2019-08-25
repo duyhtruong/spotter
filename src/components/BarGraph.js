@@ -15,7 +15,7 @@ class BarGraph extends React.Component{
           ];
 
         return(
-            <div className='plot plot--align'>
+            <div className='plot plot--align macro--width'>
             <FlexibleXYPlot height={300} xType='ordinal'>
             <XAxis  />
             <YAxis />

@@ -1,5 +1,6 @@
 nav {
-    background:linear-gradient(135deg, #297fbb 0%,#3180b8 100%);    padding: 1em 1em 1em 1em; 
+    background:linear-gradient(135deg, #297fbb 0%,#3180b8 100%);    
+    padding: 1em 1em 1em 1em; 
     height: 20vh;
 }
 
@@ -23,7 +24,7 @@ nav {
     }
 
     &__body--size{
-        width: 95vw;
+        max-width: 95vw;
         height: 50vh;       
     }
 } 
@@ -56,5 +57,19 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;    
+    }
+}
+
+.strength--width{
+
+    @include lg {
+        width: 45vw;
+        float: left;
+    }
+}
+
+.macro--width{
+    @include lg{
+        width: 45vw;
     }
 }
